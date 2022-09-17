@@ -13,14 +13,14 @@ public class Patient {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private long id;
-    private String lastName, firstName, birthDate, city,address;
-    private int patientAmka, postcode,telephone;
+    private String lastName, firstName, birthDate, city,address, telephone;
+    private int patientAmka, postcode;
     private boolean coronaPatient;
 
     public Patient() {
     }
 
-    public Patient(String lastName, String firstName, String birthDate, String city, String address, int patientAmka, int postcode, int telephone, boolean coronaPatient) {
+    public Patient(String lastName, String firstName, String birthDate, String city, String address, int patientAmka, int postcode, String telephone, boolean coronaPatient) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.birthDate = birthDate;
@@ -60,7 +60,7 @@ public class Patient {
         return postcode;
     }
 
-    public int getTelephone() {
+    public String getTelephone() {
         return telephone;
     }
 
@@ -96,7 +96,7 @@ public class Patient {
         this.postcode = postcode;
     }
 
-    public void setTelephone(int telephone) {
+    public void setTelephone(String telephone) {
         this.telephone = telephone;
     }
 

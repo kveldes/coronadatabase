@@ -32,11 +32,11 @@ public class CoronadatabaseApplication {
 		return args -> {
 			// Save demo data to database
 			repository.save(new Patient("LastName1","FirstName1","28/9/1975",
-					"Athens","SomePlace1",1111111,18344,2109784456,false));
+					"Athens","SomePlace1",1111111,18344,"2109784456",false));
 			repository.save(new Patient("LastName2","FirstName2","28/9/1980",
-					"Athens","SomePlace2",1111456,18380,2109784456,false));
+					"Athens","SomePlace2",1111456,18380,"2109784456",false));
 			repository.save(new Patient("LastName3","FirstName3","28/9/2000",
-					"Athens","SomePlace3",1111111,18344,2109784456,false));
+					"Athens","SomePlace3",1111111,18344,"2109784456",false));
 
 			// username: user password: user
 			urepository.save(new User("user",
