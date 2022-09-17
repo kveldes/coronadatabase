@@ -1,5 +1,7 @@
-//Η κλάση αυτή έχει να κάνει με το signinkey.Κάνει sign in ένα JWT με base64encode.
-// This class is about signinkey. Signs in a JWT with base64encode.
+/*
+Η κλάση αυτή έχει να κάνει με το signinkey.Κάνει sign in ένα JWT με base64encode.
+ This class is about signinkey. Signs in a JWT with base64encode.
+*/
 package com.test.coronadatabase.service;
 
 import javax.servlet.http.HttpServletRequest;
@@ -17,7 +19,9 @@ public class AuthenticationService {
     static final String SIGNINGKEY = "SecretKey";
     static final String PREFIX = "Bearer";
 
-    // Add token to Authorization header
+    /**
+     * Add token to Authorization header
+     */
     static public void addToken(HttpServletResponse res, String username) {
         String JwtToken = Jwts.builder().setSubject(username)
                 .setExpiration(new Date(System.currentTimeMillis()
@@ -28,7 +32,9 @@ public class AuthenticationService {
         res.addHeader("Access-Control-Expose-Headers", "Authorization");
     }
 
-    // Get token from Authorization header
+    /**
+     * Get token from Authorization header
+     */
     static public Authentication getAuthentication(HttpServletRequest request) {
         String token = request.getHeader("Authorization");
         if (token != null) {

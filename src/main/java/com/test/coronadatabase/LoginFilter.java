@@ -1,5 +1,7 @@
-//Κλάση η οποία διαχειρίζεστε τα authentication Post  αιτήματα για το /login endpoint.
-// Class which handles Post authentication requests for the / login endpoint.
+/*
+Κλάση η οποία διαχειρίζεστε τα authentication Post  αιτήματα για το /login endpoint.
+ Class which handles Post authentication requests for the / login endpoint.
+*/
 package com.test.coronadatabase;
 
 import java.io.IOException;

@@ -1,5 +1,7 @@
-//Διάμεσου αυτής της κλάσης ορίζουμε τις δίκες μας ρυθμίσεις στο Spring Boot Security.
-// Through this class we define our own settings in Spring Boot Security.
+/*
+Διάμεσου αυτής της κλάσης ορίζουμε τις δίκες μας ρυθμίσεις στο Spring Boot Security.
+ Through this class we define our own settings in Spring Boot Security.
+*/
 package com.test.coronadatabase;
 
 
@@ -47,9 +49,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     }
 
-    //Κάνουμε χρήση σε αυτή την class του CROS (Cross origin Resource Sharing filter).
-    //Αυτό χεριάζετε από το frontend το οποίο στέλνει αιτήματα από άλλες πήγες origin.
-    //To cross filter υποκλέβει αιτήματα και αν ανίχνευση cross origin προσθέτει τα απαραίτητα headers στο αίτημα.
+    /**
+     * Κάνουμε χρήση σε αυτή την class του CROS (Cross origin Resource Sharing filter).
+     * Αυτό χεριάζετε από το frontend το οποίο στέλνει αιτήματα από άλλες πήγες origin.
+     * To cross filter υποκλέβει αιτήματα και αν ανίχνευση cross origin προσθέτει τα απαραίτητα headers στο αίτημα.
+     */
     @Bean
     CorsConfigurationSource corsConfigurationSource() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
@@ -68,9 +72,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 
 
-    //Μέθοδος η οποία καθιστά ενεργούς χρήστες από την DB.
-    //Ποτέ δεν σώζουμε τα passwds με την μορφή απλού κειμένου στην Db.
-    //Οπότε εμείς καθορίζουμε έναν passwd hasing αλγόριθμο μέσα στην configureGlobal μέθοδο. Εδώ χρησιμοποιούμε τον BCrypt αλγόριθμο.
+    /**
+     * Μέθοδος η οποία καθιστά ενεργούς χρήστες από την DB.
+     * Ποτέ δεν σώζουμε τα passwds με την μορφή απλού κειμένου στην Db.
+     * Οπότε εμείς καθορίζουμε έναν passwd hasing αλγόριθμο μέσα στην configureGlobal μέθοδο. Εδώ χρησιμοποιούμε τον BCrypt αλγόριθμο.
+     */
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userDetailsService)

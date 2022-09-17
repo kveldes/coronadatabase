@@ -14,8 +14,10 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 //@ComponentScan({"com.test.coronadatabase.web.PatientController"})
 public class CoronadatabaseApplication {
-	@Autowired  //Dependency injection: Εισάγουμε τo Patient Repository ώστε να μπορώ να σώζω Patient Objects στην Database.
-	           // Dependency injection: We import the Patient Repository so that I can save Patient Objects in the Database.
+	@Autowired  /*
+	           Dependency injection: Εισάγουμε τo Patient Repository ώστε να μπορώ να σώζω Patient Objects στην Database.
+	            Dependency injection: We import the Patient Repository so that I can save Patient Objects in the Database.
+	           */
 	private PatientRepository repository; //Αφού έχω κάνει injection το repository μπορώ να κάνω χρήση μετα των CRUD μεθόδων που αυτό διαθέτει.
 	                                     // After I have injected the repository I can use it after the CRUD methods that it has.
 

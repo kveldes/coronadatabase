@@ -1,5 +1,7 @@
-//Κλάση η οποία διαχειρίζεστε τα authentication Post  αιτήματα για τα endpoints εκτός του /login.
-// Class that handles Post authentication requests for endpoints other than / login.
+/*
+Κλάση η οποία διαχειρίζεστε τα authentication Post  αιτήματα για τα endpoints εκτός του /login.
+ Class that handles Post authentication requests for endpoints other than / login.
+*/
 
 package com.test.coronadatabase;
 
