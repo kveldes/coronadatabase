@@ -1,6 +1,6 @@
 //Entity class για δημιουργία πίνακα Patient στην βάση δεδομένων MariaDB.
 // Entity class to create a Patient table in the MariaDB database.
-
+//
 package com.test.coronadatabase.domain;
 
 import javax.persistence.Entity;
