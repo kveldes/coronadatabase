@@ -1,3 +1,4 @@
+//-8-
 package com.test.coronadatabase.domain;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

@@ -1,4 +1,4 @@
-/* Μια απλη POJO class για να κραταει τα credentials για το authentication. */
+/* -12- Μια απλή POJO class για να κρατάει τα credentials για το authentication. */
 package com.test.coronadatabase.domain;
 
 public class AccountCredentials {

@@ -1,3 +1,4 @@
+//-7-
 package com.test.coronadatabase.domain;
 
 import javax.persistence.Column;

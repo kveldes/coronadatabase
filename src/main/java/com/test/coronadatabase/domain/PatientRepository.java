@@ -1,13 +1,12 @@
 /*
-**Παρέχει CRUD λειτουργικότητα για την Patient Entity Class.
-Οι  <Patient,Long> τύποι παραμέτρων καθορίζουν ότι είναι το repository για την Patient Enity class
+ -2-
+ **Παρέχει CRUD λειτουργικότητα για την Patient Entity Class.
+ Οι  <Patient,Long> τύποι παραμέτρων καθορίζουν ότι είναι το repository για την Patient Enity class
  και ο τύπος του ID field είναι long.
  ** Provides CRUD functionality for the Patient Entity Class.
  The <Patient, Long> parameter types specify that it is the repository for the Patient Enity class
  and the ID field type is long.
 */
-
-
 package com.test.coronadatabase.domain;
 
 import java.util.List;

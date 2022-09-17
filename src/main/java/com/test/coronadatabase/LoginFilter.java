@@ -1,5 +1,6 @@
 /*
-Κλάση η οποία διαχειρίζεστε τα authentication Post  αιτήματα για το /login endpoint.
+ -13-
+ Κλάση η οποία διαχειρίζεστε τα authentication Post  αιτήματα για το /login endpoint.
  Class which handles Post authentication requests for the / login endpoint.
 */
 package com.test.coronadatabase;

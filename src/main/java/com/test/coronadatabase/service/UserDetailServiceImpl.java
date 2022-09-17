@@ -1,5 +1,6 @@
 /*
-Κλάση η οποία χρησιμοποιείτε για User Authentication & User Authorization
+ -9-
+ Κλάση η οποία χρησιμοποιείτε για User Authentication & User Authorization
  Class used for User Authentication and User Authorization
 */
 package com.test.coronadatabase.service;
@@ -20,7 +21,7 @@ public class UserDetailServiceImpl implements UserDetailsService {
 
 
     @Override /*
-             Η μέθοδος αυτή επιστρέφει το UserDetails object το οποίο απαιτείται για το authentication.
+              Η μέθοδος αυτή επιστρέφει το UserDetails object το οποίο απαιτείται για το authentication.
               This method returns the UserDetails object required for authentication.
              */
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException

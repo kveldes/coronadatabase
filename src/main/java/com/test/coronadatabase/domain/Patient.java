@@ -1,5 +1,6 @@
 /*
-Entity class για δημιουργία πίνακα Patient στην βάση δεδομένων MariaDB.
+ -1-
+ Entity class για δημιουργία πίνακα Patient στην βάση δεδομένων MariaDB.
  Entity class to create a Patient table in the MariaDB database.
 */
 package com.test.coronadatabase.domain;
@@ -13,7 +14,7 @@ import javax.persistence.Id;
 public class Patient {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private long id;
+    private long id; //Primary Key in the DB
     private String lastName, firstName, birthDate, city,address, telephone;
     private int patientAmka, postcode;
     private boolean coronaPatient;
